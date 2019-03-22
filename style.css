@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	justify-content: center;
+	margin: 200px auto;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	width: 400px;
+	height: 400px;
+	flex-wrap: wrap;
+}
+
+.button-green {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	border-top-left-radius: 100px;
+}
+
+.button-red {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-top-right-radius: 100px;
+}
+
+.button-blue {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	border-bottom-left-radius: 100px;
+}
+
+.button-yellow {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border-bottom-right-radius: 100px;
+}
