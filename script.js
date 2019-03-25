@@ -1,6 +1,5 @@
 console.log("hello simon");
 
-//find location of the buttons and put into an array to manipulate later
 var buttonsClass = document.querySelectorAll(".buttons")[0];
 var buttonsArr = [];
 var simonArray = [];

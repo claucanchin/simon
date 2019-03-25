@@ -1,11 +1,19 @@
 body {
-	margin: 200px 200px;
+	text-align: center;
+	background-color: black;
+}
+
+h1 {
+	font-family: 'Audiowide', cursive;
+	color: white;
+	margin: 40px auto;
 }
 
 .buttons {
+	margin: auto;
 	display: flex;
 	justify-content: center;
-	width: 400px;
+	width: 550px;
 	height: 400px;
 	flex-wrap: wrap;
 }
@@ -15,6 +23,9 @@ body {
 	height: 200px;
 	background-color: green;
 	border-top-left-radius: 100px;
+	border-width: 10px 5px 5px 10px;
+	border-color: black;
+	border-style: solid;
 }
 
 .btn-red {
@@ -22,6 +33,9 @@ body {
 	height: 200px;
 	background-color: red;
 	border-top-right-radius: 100px;
+	border-width: 10px 10px 5px 5px;
+	border-color: black;
+	border-style: solid;
 }
 
 .btn-blue {
@@ -29,6 +43,9 @@ body {
 	height: 200px;
 	background-color: blue;
 	border-bottom-right-radius: 100px;
+	border-width: 5px 10px 10px 5px;
+	border-color: black;
+	border-style: solid;
 }
 
 .btn-yellow {
@@ -36,6 +53,9 @@ body {
 	height: 200px;
 	background-color: yellow;
 	border-bottom-left-radius: 100px;
+	border-width: 5px 5px 10px 10px;
+	border-color: black;
+	border-style: solid;
 }
 
 .btn-green:hover {
@@ -56,4 +76,8 @@ body {
 
 .btn:active {
 	background-color: #000;
+}
+
+.start {
+	padding-top: 50px;
 }
