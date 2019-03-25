@@ -10,14 +10,13 @@ for (var i = 0; i < buttonsClass.children.length; i++) {
     buttonsArr.push(buttonsClass.children[i]);
 }
 
-
 var flash = function(button) {
     return function() {
         var oldColor = button.style.backgroundColor;
         button.style.backgroundColor = "black";
         setTimeout(function(){
             button.style.backgroundColor = oldColor;
-        }, 200)
+        }, 300)
     }
 }
 
@@ -25,7 +24,7 @@ var flashButtons = function(arrOfButtons) {
     var pauseTime = 100;
     for (var i = 0; i < arrOfButtons.length; i++) {
         setTimeout(flash(arrOfButtons[i]), pauseTime);
-        pauseTime = pauseTime + 500;
+        pauseTime = pauseTime + 600;
     };
 }
 
@@ -40,7 +39,7 @@ function start() {
 
 function newRound() {
     simonArray.push(randomSelect(buttonsArr));
-    flashButtons(simonArray);
+    setTimeout (function() { flashButtons(simonArray); }, 1000);
 }
 
 var randomSelect = function(buttons)  {
@@ -82,7 +81,7 @@ var checkWin = function() {
             console.log("You lose, try again");
             playerArray = [];
             clickCount = 0;
-            flashButtons(simonArray);
+            setTimeout (function() { flashButtons(simonArray); }, 1000);
         }
     }
 }

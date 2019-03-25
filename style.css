@@ -21,7 +21,7 @@ h1 {
 .btn-green {
 	width: 200px;
 	height: 200px;
-	background-color: green;
+	background-color: #008000;
 	border-top-left-radius: 100px;
 	border-width: 10px 5px 5px 10px;
 	border-color: black;
@@ -31,7 +31,7 @@ h1 {
 .btn-red {
 	width: 200px;
 	height: 200px;
-	background-color: red;
+	background-color: #FF0000;
 	border-top-right-radius: 100px;
 	border-width: 10px 10px 5px 5px;
 	border-color: black;
@@ -41,7 +41,7 @@ h1 {
 .btn-blue {
 	width: 200px;
 	height: 200px;
-	background-color: blue;
+	background-color: #0000FF;
 	border-bottom-right-radius: 100px;
 	border-width: 5px 10px 10px 5px;
 	border-color: black;
@@ -51,7 +51,7 @@ h1 {
 .btn-yellow {
 	width: 200px;
 	height: 200px;
-	background-color: yellow;
+	background-color: #FFFF00;
 	border-bottom-left-radius: 100px;
 	border-width: 5px 5px 10px 10px;
 	border-color: black;
@@ -59,19 +59,19 @@ h1 {
 }
 
 .btn-green:hover {
-	background-color: #006400;
+	background-color: #91ff91;
 }
 
 .btn-red:hover {
-	background-color: #B00000;
+	background-color: #F99;
 }
 
 .btn-blue:hover {
-	background-color: #0000CD;
+	background-color: #99F;
 }
 
 .btn-yellow:hover {
-	background-color: #999900;
+	background-color: #ffa;
 }
 
 .btn:active {
