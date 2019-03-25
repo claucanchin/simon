@@ -5,9 +5,29 @@ var buttonsArr = [];
 var simonArray = [];
 var playerArray =[];
 var clickCount = 0;
+var currText = document.querySelector(".text")
 
 for (var i = 0; i < buttonsClass.children.length; i++) {
     buttonsArr.push(buttonsClass.children[i]);
+}
+
+//start game: generate random buttons, push into array, flash
+var startButton = document.querySelector("#start");
+startButton.addEventListener("click", start);
+
+function start() {
+    this.style.display = 'none';
+    newRound();
+}
+
+function newRound() {
+    simonArray.push(randomSelect(buttonsArr));
+    setTimeout (function() { currText.innerText = "LEVEL " + simonArray.length; }, 1000);
+    setTimeout (function() { flashButtons(simonArray); }, 2000);
+}
+
+var randomSelect = function(buttons)  {
+    return buttons[Math.floor(Math.random()*buttonsArr.length)];
 }
 
 var flash = function(button) {
@@ -28,24 +48,7 @@ var flashButtons = function(arrOfButtons) {
     };
 }
 
-//start game generate random buttons, push into array, flash
-var startButton = document.querySelector("#start");
-startButton.addEventListener("click", start);
-
-function start() {
-    this.style.display = 'none';
-    newRound();
-}
-
-function newRound() {
-    simonArray.push(randomSelect(buttonsArr));
-    setTimeout (function() { flashButtons(simonArray); }, 1000);
-}
-
-var randomSelect = function(buttons)  {
-    return buttons[Math.floor(Math.random()*buttonsArr.length)];
-}
-
+//add event listener to check if player's clicks match
 for (var i = 0; i < buttonsArr.length; i++) {
     buttonsArr[i].addEventListener("click",
         //put clicked buttons into an array
@@ -74,14 +77,17 @@ var checkWin = function() {
     if (clickCount === simonArray.length) {
         if (isSame(playerArray, simonArray)) {
             console.log("It's a match");
+            currText.innerText = "Great job!";
             playerArray = [];
             clickCount = 0;
             newRound();
         } else {
             console.log("You lose, try again");
+            currText.innerText = "Try again!";
+            setTimeout (function() { currText.innerText = "LEVEL " + simonArray.length; }, 1000);
             playerArray = [];
             clickCount = 0;
-            setTimeout (function() { flashButtons(simonArray); }, 1000);
+            setTimeout (function() { flashButtons(simonArray); }, 2000);
         }
     }
 }

@@ -6,7 +6,14 @@ body {
 h1 {
 	font-family: 'Audiowide', cursive;
 	color: white;
-	margin: 40px auto;
+	margin: 40px auto 20px auto;
+	font-size: 50px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	color: #fff;
 }
 
 .buttons {
@@ -79,5 +86,11 @@ h1 {
 }
 
 .start {
-	padding-top: 50px;
+	padding-top: 30px;
+
+}
+
+#start {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
 }
