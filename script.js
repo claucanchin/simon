@@ -1,5 +1,3 @@
-console.log("hello simon");
-
 var buttonsClass = document.querySelectorAll(".buttons")[0];
 var buttonsArr = [];
 var simonArray = [];
@@ -14,9 +12,14 @@ for (var i = 0; i < buttonsClass.children.length; i++) {
 //start game: generate random buttons, push into array, flash
 var startButton = document.querySelector("#start");
 startButton.addEventListener("click", start);
+var resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function() {
+    location.reload();
+});
 
 function start() {
-    this.style.display = 'none';
+    this.style.display = "none";
+    resetButton.style.display = "inline";
     newRound();
 }
 
