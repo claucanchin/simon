@@ -9,6 +9,26 @@ for (var i = 0; i < buttonsClass.children.length; i++) {
     buttonsArr.push(buttonsClass.children[i]);
 }
 
+var greenBtn = document.querySelector(".green");
+var redBtn = document.querySelector(".red");
+var yellowBtn = document.querySelector(".yellow");
+var blueBtn = document.querySelector(".blue");
+
+var btnAudio = {
+    greenBtn: "https://github.com/claucanchin/simon/blob/master/audio/C.mp3",
+    redBtn: "https://github.com/claucanchin/simon/blob/master/audio/D.mp3",
+    yellowBtn: "https://github.com/claucanchin/simon/blob/master/audio/E.mp3",
+    blueBtn: "https://github.com/claucanchin/simon/blob/master/audio/G.mp3",
+};
+
+// function overlayOn() {
+//   document.querySelector(".overlay").style.display = "block";
+// }
+
+// function overlayOff() {
+//   document.querySelector(".overlay").style.display = "none";
+// }
+
 //start game: generate random buttons, push into array, flash
 var startButton = document.querySelector("#start");
 startButton.addEventListener("click", start);

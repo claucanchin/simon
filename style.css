@@ -26,7 +26,7 @@ h2 {
 	flex-wrap: wrap;
 }
 
-.btn-green {
+.green {
 	width: 200px;
 	height: 200px;
 	background-color: #008000;
@@ -36,7 +36,7 @@ h2 {
 	border-style: solid;
 }
 
-.btn-red {
+.red {
 	width: 200px;
 	height: 200px;
 	background-color: #FF0000;
@@ -46,7 +46,7 @@ h2 {
 	border-style: solid;
 }
 
-.btn-blue {
+.blue {
 	width: 200px;
 	height: 200px;
 	background-color: #0000FF;
@@ -56,7 +56,7 @@ h2 {
 	border-style: solid;
 }
 
-.btn-yellow {
+.yellow {
 	width: 200px;
 	height: 200px;
 	background-color: #FFFF00;
@@ -66,20 +66,8 @@ h2 {
 	border-style: solid;
 }
 
-.btn-green:hover {
-	background-color: #91ff91;
-}
-
-.btn-red:hover {
-	background-color: #F99;
-}
-
-.btn-blue:hover {
-	background-color: #99F;
-}
-
-.btn-yellow:hover {
-	background-color: #ffa;
+.btn:hover {
+	opacity: 0.9;
 }
 
 .btn:active {
