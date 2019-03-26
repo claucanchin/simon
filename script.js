@@ -55,7 +55,7 @@ var randomSelect = function(buttons)  {
 
 var flash = function(button) {
     return function() {
-        overlayOn();
+        // overlayOn();
         var oldColor = button.style.backgroundColor;
         button.style.backgroundColor = "black";
         setTimeout(function(){

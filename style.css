@@ -90,7 +90,7 @@ h2 {
 	display: none;
 }
 
-.overlay {
+/*.overlay {
   position: fixed;
   display: none;
   top: 0;
@@ -99,4 +99,4 @@ h2 {
   width: 100%;
   z-index: 10;
   background-color: rgba(255,0,0,0.5);
-}
+}*/
