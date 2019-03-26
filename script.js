@@ -7,7 +7,7 @@ var currText = document.querySelector(".text")
 
 for (var i = 0; i < buttonsClass.children.length; i++) {
     buttonsArr.push(buttonsClass.children[i]);
-}
+};
 
 var greenBtn = document.querySelector(".green");
 var redBtn = document.querySelector(".red");
@@ -15,19 +15,19 @@ var yellowBtn = document.querySelector(".yellow");
 var blueBtn = document.querySelector(".blue");
 
 var btnAudio = {
-    greenBtn: "https://github.com/claucanchin/simon/blob/master/audio/C.mp3",
-    redBtn: "https://github.com/claucanchin/simon/blob/master/audio/D.mp3",
-    yellowBtn: "https://github.com/claucanchin/simon/blob/master/audio/E.mp3",
-    blueBtn: "https://github.com/claucanchin/simon/blob/master/audio/G.mp3",
+    greenBtn: "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3",
+    redBtn: "https://s3.amazonaws.com/freecodecamp/simonSound2.mp3",
+    yellowBtn: "https://s3.amazonaws.com/freecodecamp/simonSound3.mp3",
+    blueBtn: "https://s3.amazonaws.com/freecodecamp/simonSound4.mp3",
 };
 
-// function overlayOn() {
-//   document.querySelector(".overlay").style.display = "block";
-// }
+function overlayOn() {
+  document.querySelector(".overlay").style.display = "block";
+}
 
-// function overlayOff() {
-//   document.querySelector(".overlay").style.display = "none";
-// }
+function overlayOff() {
+  document.querySelector(".overlay").style.display = "none";
+}
 
 //start game: generate random buttons, push into array, flash
 var startButton = document.querySelector("#start");
@@ -55,6 +55,7 @@ var randomSelect = function(buttons)  {
 
 var flash = function(button) {
     return function() {
+        overlayOn();
         var oldColor = button.style.backgroundColor;
         button.style.backgroundColor = "black";
         setTimeout(function(){
