@@ -83,7 +83,6 @@ h2 {
 
 .start {
 	padding-top: 30px;
-	padding-bottom: 10px;
 	width: 500px;
 	margin: 0 auto;
 }
@@ -102,6 +101,7 @@ h2 {
 @media only screen and (max-width: 500px) {
   h1 {
     width: 430px;
+    margin: 20px auto;
   }
 
   h2 {
@@ -109,6 +109,12 @@ h2 {
   }
 
   .start {
+  	width: 430px;
+  	padding-top: 20px;
+  	padding-bottom: 10px;
+  }
+
+  .reset {
   	width: 430px;
   }
 
