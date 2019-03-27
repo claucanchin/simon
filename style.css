@@ -83,6 +83,7 @@ h2 {
 
 .start {
 	padding-top: 30px;
+	padding-bottom: 30px;
 	width: 500px;
 	margin: 0 auto;
 }
@@ -96,4 +97,22 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    width: 400px;
+  }
+
+  h2 {
+  	width: 400px;
+  }
+
+  .start {
+  	width: 400px;
+  }
+
+  .buttons {
+  	width: 430px;
+  }
 }
