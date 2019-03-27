@@ -124,12 +124,12 @@ h2 {
   h1 {
   	font-size: 40px;
     width: 360px;
-    margin: 10px auto;
+    margin: 15px auto;
   }
 
   h2 {
-  	font-size: 16px;
-  	min-height: 20px;
+  	font-size: 18px;
+  	min-height: 25px;
   	width: 360px;
   }
 
