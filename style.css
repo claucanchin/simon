@@ -1,3 +1,7 @@
+html {
+	width: 100%;
+}
+
 body {
 	text-align: center;
 	background-color: black;
@@ -6,8 +10,9 @@ body {
 h1 {
 	font-family: 'Audiowide', cursive;
 	color: white;
-	margin: 40px auto 20px auto;
 	font-size: 50px;
+	width: 550px;
+	margin: 40px auto 20px auto;
 }
 
 h2 {
@@ -15,6 +20,8 @@ h2 {
 	font-size: 28px;
 	color: #fff;
 	min-height: 35px;
+	width: 550px
+	margin: 0 auto;
 }
 
 .buttons {
@@ -76,6 +83,8 @@ h2 {
 
 .start {
 	padding-top: 30px;
+	width: 550px;
+	margin: 0 auto;
 }
 
 #start {

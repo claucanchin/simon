@@ -33,6 +33,8 @@ var randomSelect = function(buttons)  {
     return buttons[Math.floor(Math.random()*buttonsArr.length)];
 }
 
+//act of flashing
+//set timeout here determines how long a button flashes for
 var flash = function(button) {
     return function() {
         var oldColor = button.style.backgroundColor;
@@ -43,6 +45,8 @@ var flash = function(button) {
     }
 }
 
+//flash selected array of buttons
+//set timeout here determines how long in between each flash
 var flashButtons = function(arrOfButtons) {
     var pauseTime = 100;
     for (var i = 0; i < arrOfButtons.length; i++) {
