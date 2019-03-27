@@ -122,14 +122,14 @@ h2 {
 
 @media only screen and (max-width: 400px) {
   h1 {
-  	font-size: 40px;
+  	font-size: 45px;
     width: 360px;
     margin: 15px auto;
   }
 
   h2 {
-  	font-size: 18px;
-  	min-height: 25px;
+  	font-size: 23px;
+  	min-height: 27px;
   	width: 360px;
   }
 
@@ -169,10 +169,10 @@ h2 {
   }
 
   #start {
-  	font-size: 10px;
+  	font-size: 16px;
   }
 
   #reset {
-  	font-size: 10px;
+  	font-size: 16px;
   }
 }
