@@ -66,17 +66,16 @@ h2 {
 	border-style: solid;
 }
 
-.btn:hover {
+.btnpad:hover {
 	opacity: 0.9;
 }
 
-.btn:active {
+.btn_pad:active {
 	background-color: #000;
 }
 
 .start {
 	padding-top: 30px;
-
 }
 
 #start {
