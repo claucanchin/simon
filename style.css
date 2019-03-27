@@ -98,27 +98,81 @@ h2 {
 	display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   h1 {
-    width: 430px;
+    width: 420px;
     margin: 20px auto;
   }
 
   h2 {
-  	width: 430px;
+  	width: 420px;
+  	margin: 10px auto;
   }
 
   .start {
-  	width: 430px;
   	padding-top: 20px;
   	padding-bottom: 10px;
-  }
-
-  .reset {
-  	width: 430px;
+  	width: 420px;
   }
 
   .buttons {
-  	width: 430px;
+  	width: 420px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+  	font-size: 40px;
+    width: 360px;
+    margin: 10px auto;
+  }
+
+  h2 {
+  	font-size: 16px;
+  	min-height: 20px;
+  	width: 360px;
+  }
+
+  .buttons {
+  	width: 360px;
+  	height: 260px;
+  }
+
+  .green {
+	width: 165px;
+	height: 165px;
+	border-width: 10px 5px 5px 10px;
+  }
+
+  .red {
+	width: 165px;
+	height: 165px;
+	border-width: 10px 10px 5px 5px;
+  }
+
+  .blue {
+	width: 165px;
+	height: 165px;
+	border-width: 5px 10px 10px 5px;
+  }
+
+  .yellow {
+	width: 165px;
+	height: 165px;
+	border-width: 5px 5px 10px 10px;
+  }
+
+  .start {
+  	padding-top: 80px;
+  	padding-bottom: 10px;
+  	width: 360px;
+  }
+
+  #start {
+  	font-size: 10px;
+  }
+
+  #reset {
+  	font-size: 10px;
   }
 }
