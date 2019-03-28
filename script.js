@@ -3,7 +3,8 @@ var buttonsArr = [];
 var simonArray = [];
 var playerArray =[];
 var clickCount = 0;
-var currText = document.querySelector(".text")
+var currText = document.querySelector(".text");
+var flag = false;
 
 for (var i = 0; i < buttonsClass.children.length; i++) {
     buttonsArr.push(buttonsClass.children[i]);
@@ -18,6 +19,7 @@ resetButton.addEventListener("click", function() {
 });
 
 function start() {
+    flag = true;
     this.style.display = "none";
     resetButton.style.display = "inline";
     newRound();
@@ -61,11 +63,13 @@ for (var i = 0; i < buttonsArr.length; i++) {
         //put clicked buttons into an array
         function(button) {
           return function() {
+            if (flag) {
                 playerArray.push(button);
                 clickCount += 1;
                 checkWin();
             }
-        }(buttonsArr[i]));
+        }
+    }(buttonsArr[i]));
 }
 
 //compare both arrays: return false as soon as length does not match, then return false as soon as index does not match
